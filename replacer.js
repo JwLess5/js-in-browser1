@@ -5,7 +5,10 @@ var textBox = document.getElementById("text-to-display"),
 
 printButton.addEventListener("click", function(){
     var text = textBox.value;
-    printArea.innerText = printArea.innerText + "\n" + text;
+    //printArea.innerText = printArea.innerText + "\n" + text;
+    printArea.innerText += "\n" + text;
+});
 
-
+clearButton.addEventListener("click", function(){
+    printArea.innerText = "";
 });
